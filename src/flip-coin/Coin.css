@@ -1,0 +1,36 @@
+.coin-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .coin {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    perspective: 1000px;
+    box-sizing: border-box;
+  }
+  
+  .coin .side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .coin .front {
+    background-color: #ffd700; /* Màu vàng */
+    transform: rotateY(180deg);
+  }
+  
+  .coin .back {
+    background-color: #c0c0c0; /* Màu bạc */
+  }
+  

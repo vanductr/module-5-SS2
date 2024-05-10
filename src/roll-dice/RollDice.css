@@ -1,0 +1,50 @@
+.RollDice {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .dice {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .fa-solid {
+    font-size: 20rem; /* Điều chỉnh kích thước của xúc xắc */
+    margin: 10px;
+  }
+  
+  .shaking {
+    animation-name: wobble;
+    animation-duration: 1s;
+  }
+  
+  @keyframes wobble {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    15% {
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
